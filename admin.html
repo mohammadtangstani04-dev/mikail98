@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>درگاه امن ورود و مدیریت بلک‌فروت - BLACKFRUIT CORE</title>
-    <meta name="description" content="درگاه امن ورود مدیریت و کنسول مانیتورینگ ربات‌های ترید و انبار میوه‌های بلک‌فروت" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <title>درگاه امن ورود و مدیریت بلوکی‌مکس - BLACKFRUIT CORE</title>
+    <meta name="description" content="درگاه امن ورود مدیریت و کنسول مانیتورینگ ربات‌های ترید و انبار میوه‌های بلوکی‌مکس" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body style="background-color: #0b0d13;">
     
@@ -42,7 +42,7 @@
         </div>
 
         <div class="gateway-title-block">
-          <h1 class="gateway-title">درگاه امن مدیریت بلک‌فروت</h1>
+          <h1 class="gateway-title">درگاه امن مدیریت بلوکی‌مکس</h1>
           <div class="gateway-sub">BLACKFRUIT CORE // RESTRICTED ACCESS GATEWAY</div>
           <div>
             <span class="gateway-tag-pill">
@@ -118,7 +118,7 @@
           <!-- Submit Button -->
           <button type="submit" id="adminLoginBtn" class="btn-primary-glow" style="width: 100%; justify-content: center; padding: 0.85rem; font-size: 0.95rem;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-            <span>ورود به پنل مدیریت بلک‌فروت</span>
+            <span>ورود به پنل مدیریت بلوکی‌مکس</span>
           </button>
         </form>
 
@@ -130,7 +130,7 @@
 
         <div style="text-align: center; margin-top: 1.25rem;">
           <a href="index.html" style="font-size: 0.8rem; color: var(--text-muted); display: inline-flex; align-items: center; gap: 0.4rem;">
-            <span>بازگشت به فروشگاه بلک‌فروت (blackfruit.net)</span>
+            <span>بازگشت به فروشگاه بلوکی‌مکس (blackfruit.net)</span>
             <span>←</span>
           </a>
         </div>
@@ -177,7 +177,7 @@
                 <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
               </div>
               <div class="logo-text-col">
-                <span class="logo-title" style="font-size: 1.15rem;">بلک‌فروت ادمین</span>
+                <span class="logo-title" style="font-size: 1.15rem;">بلوکی‌مکس ادمین</span>
                 <span class="logo-sub" style="color: var(--primary-light);">ADMIN COMMAND // SUPER ADMIN</span>
               </div>
             </div>
@@ -342,7 +342,7 @@
         <section style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 1.75rem; margin-bottom: 2.5rem;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
             <div>
-              <h2 style="font-size: 1.3rem; font-weight: 800; color: #fff;">مدیریت محصولات و انبار بلک‌فروت</h2>
+              <h2 style="font-size: 1.3rem; font-weight: 800; color: #fff;">مدیریت محصولات و انبار بلوکی‌مکس</h2>
               <div style="font-size: 0.78rem; color: var(--text-dim);">تنظیم قیمت ریالی، نرخ Demand بازار و وضعیت عرضه در شاپ</div>
             </div>
             <div style="display: flex; gap: 0.5rem;">
@@ -593,7 +593,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/app.js"></script>
+    <script src="app.js"></script>
     <script>
       // Required Admin Password: exactly "3530, 387, 411"
       // Precomputed SHA-256 hash: 10d076ee2f1341ee2fd49771d287ddae6dfb9d5df78262dd0bd8913f2bf34a58
@@ -668,7 +668,7 @@
           // Initialize Dashboard
           renderAdminProductsTable();
           renderAdminVerificationOrders();
-          showToast('ورود موفقیت‌آمیز بود! خوش آمدید به پنل مدیریت بلک‌فروت.');
+          showToast('ورود موفقیت‌آمیز بود! خوش آمدید به پنل مدیریت بلوکی‌مکس.');
           playUiBeep(780, 0.1);
         } else {
           // Authentication Failed
@@ -894,7 +894,7 @@
           orderId, 
           'Paid / Processing', 
           '', 
-          'فیش واریز شما توسط تیم مالی بلک‌فروت تایید گردید. ربات در سرور اختصاصی آماده تبادل میوه با شماست.'
+          'فیش واریز شما توسط تیم مالی بلوکی‌مکس تایید گردید. ربات در سرور اختصاصی آماده تبادل میوه با شماست.'
         );
         if (order) {
           showToast(`سفارش #${orderId} با موفقیت تایید شد! وضعیت: Paid / Processing`);
@@ -997,7 +997,7 @@
             messagesBox.innerHTML = ticket.messages.map(m => `
               <div style="padding: 0.65rem 0.85rem; border-radius: 6px; font-size: 0.82rem; ${m.sender === 'admin' ? 'background: rgba(6, 182, 212, 0.12); border: 1px solid var(--border-cyan);' : 'background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-subtle);'}">
                 <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: ${m.sender === 'admin' ? 'var(--cyan)' : 'var(--text-dim)'}; margin-bottom: 0.25rem;">
-                  <span>${m.sender === 'admin' ? '🛡️ ادمین بلک‌فروت' : '👤 مشتری (' + (m.author || 'خریدار') + ')'}</span>
+                  <span>${m.sender === 'admin' ? '🛡️ ادمین بلوکی‌مکس' : '👤 مشتری (' + (m.author || 'خریدار') + ')'}</span>
                   <span>${m.date || ''}</span>
                 </div>
                 <div style="color: #e2e8f0; line-height: 1.5;">${m.text}</div>
@@ -1042,7 +1042,7 @@
 
         ticket.messages.push({
           sender: 'admin',
-          author: 'پشتیبانی بلک‌فروت',
+          author: 'پشتیبانی بلوکی‌مکس',
           text: replyText,
           date: new Date().toLocaleString('fa-IR')
         });
@@ -1156,7 +1156,7 @@
           accent: 'cyan',
           badge: 'جدید',
           status: 'در انبار',
-          desc: `میوه جدید اضافه شده به استوک بلک‌فروت: ${fa}`
+          desc: `میوه جدید اضافه شده به استوک بلوکی‌مکس: ${fa}`
         });
 
         saveProducts(products);
@@ -1169,5 +1169,9 @@
         checkAuthStatus();
       });
     </script>
-  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="supabase-auth.js"></script>
+</body>
 </html>
