@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>وارسی سفارش و پرداخت کارت به کارت - بلک‌فروت</title>
-    <meta name="description" content="پرداخت مستقیم کارت به کارت به شماره کارت رسمی بلک‌فروت و ارسال فیش واریزی جهت تایید سریع سفارش" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <title>وارسی سفارش و پرداخت کارت به کارت - بلوکی‌مکس</title>
+    <meta name="description" content="پرداخت مستقیم کارت به کارت به شماره کارت رسمی بلوکی‌مکس و ارسال فیش واریزی جهت تایید سریع سفارش" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Top Live Ticker -->
@@ -13,7 +13,7 @@
       <div class="container">
         <div style="display: flex; align-items: center; justify-content: space-between;">
           <div class="ticker-content">
-            <span class="ticker-ping"><span class="ping-dot"></span><span>درگاه کارت به کارت شتابی امن بلک‌فروت</span></span>
+            <span class="ticker-ping"><span class="ping-dot"></span><span>درگاه کارت به کارت شتابی امن بلوکی‌مکس</span></span>
             <span>💳 انتقال سریع با ثبت آنی فیش واریزی</span>
             <span>🛡️ پشتیبانی تایید حساب در کمتر از ۵ دقیقه</span>
           </div>
@@ -283,14 +283,14 @@
     <footer class="site-footer">
       <div class="container">
         <div class="footer-bottom-bar">
-          <div>© ۲۰۲۵ تمامی حقوق برای فروشگاه بلک‌فروت محفوظ است.</div>
+          <div>© ۲۰۲۵ تمامی حقوق برای فروشگاه بلوکی‌مکس محفوظ است.</div>
           <div style="font-family: var(--font-en);">BLACKFRUIT VERIFIED CARD PAYMENT // 6219 8619 5751 5835</div>
         </div>
       </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/app.js"></script>
+    <script src="app.js"></script>
     <script>
       let currentOrderData = null;
       let selectedReceiptBase64 = null;
@@ -518,7 +518,7 @@
           tickets.unshift({
             id: 'TK-' + Math.floor(10000 + Math.random() * 90000),
             orderId: orderId,
-            customerName: currentOrderData.robloxUser || 'مشتری بلک‌فروت',
+            customerName: currentOrderData.robloxUser || 'مشتری بلوکی‌مکس',
             customerRoblox: currentOrderData.robloxUser,
             customerPhone: currentOrderData.phone || '',
             subject: `ارسال فیش واریز برای سفارش #${orderId}`,
@@ -552,5 +552,9 @@
         window.location.href = `contact.html?orderId=${encodeURIComponent(orderId)}`;
       }
     </script>
-  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="supabase-auth.js"></script>
+</body>
 </html>
