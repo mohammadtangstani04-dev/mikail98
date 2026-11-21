@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>فروشگاه میوه‌های Blox Fruits - بلک‌فروت</title>
+    <title>فروشگاه میوه‌های Blox Fruits - بلوکی‌مکس</title>
     <meta name="description" content="فروشگاه جامع خرید میوه‌های فیزیکی و پرمنت Blox Fruits با ارزان‌ترین قیمت تومان و تحویل در سرور VIP" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Top Live Ticker -->
@@ -199,7 +199,7 @@
           <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem; text-align: center;">
             <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--cyan); color: #0b0d13; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: 800;">۲</div>
             <div style="font-weight: 700; color: #fff; margin-bottom: 0.5rem;">ورود به سرور VIP</div>
-            <div style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">لینک اختصاصی سرور امن بلک‌فروت برای شما پیامک و در داشبورد ثبت می‌شود.</div>
+            <div style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">لینک اختصاصی سرور امن بلوکی‌مکس برای شما پیامک و در داشبورد ثبت می‌شود.</div>
           </div>
 
           <!-- Step 3 -->
@@ -232,7 +232,7 @@
             <div class="footer-col-title">پشتیبانی</div>
             <ul class="footer-links-list">
               <li><a href="contact.html">ثبت تیکت پشتیبانی</a></li>
-              <li><a href="https://t.me/blackfruit_support">تلگرام رسمی @blackfruit_support</a></li>
+              <li><a href="contact.html">پشتیبانی سایت رسمی @blackfruit_support</a></li>
             </ul>
           </div>
           <div>
@@ -303,7 +303,7 @@
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="orderPhone">شماره موبایل یا آیدی تلگرام</label>
+            <label class="form-label" for="orderPhone">شماره موبایل یا آیدی پشتیبانی سایت</label>
             <input type="text" id="orderPhone" class="form-control" placeholder="0912xxxxxxx یا @telegram_id" />
           </div>
 
@@ -321,7 +321,7 @@
               پرداخت آنلاین شتاب
             </button>
             <button class="btn-cyan-glow" style="justify-content: center;" onclick="processOrder('telegram')">
-              سفارش در تلگرام
+              سفارش در پشتیبانی سایت
             </button>
           </div>
         </div>
@@ -350,7 +350,7 @@
       </div>
     </div>
 
-    <script src="assets/app.js"></script>
+    <script src="app.js"></script>
     <script>
       function handleSortChange(sortType) {
         const products = getStoredProducts();
@@ -369,5 +369,9 @@
         renderProducts('productsGrid', 'all', '', inStockOnly);
       }
     </script>
-  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="supabase-auth.js"></script>
+</body>
 </html>
